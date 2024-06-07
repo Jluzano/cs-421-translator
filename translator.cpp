@@ -1,7 +1,7 @@
 #include<iostream>
 #include<fstream>
 #include<string>
-#include <stdlib.h>
+#include<stdlib.h>
 using namespace std;
 
 /* INSTRUCTION:  copy your parser.cpp here
@@ -96,6 +96,7 @@ bool match(tokentype expected)
 		token_available = false;  // eat up the token
 		return true;              // say there was a match
 	}
+    return EXIT_SUCCESS;
 }
 
 bool word (string s)
